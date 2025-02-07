@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab's Portfolio</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Contact.html">
+    <script src="project.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tayyab's Portfolio</div>
+            <div class="right">
+                <ul class="flex justify">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <style>
+            .contactHead{
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3vh 0;
+            }
+            .Contact{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .mediaInfo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mediaInfo .leftMedia img{
+                width: 300px;
+            }
+            .mediaInfo .leftMedia .Insta{
+                width: 230px;
+            }
+            .mediaInfo .leftMedia .Discord{
+                width: 250px;
+            }
+            .mediaInfo .leftMedia .Mail{
+                width: 190px;
+            }
+            .mediaInfo .rightMedia{
+                height: 30vh;
+                width: 30vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .mediaInfo .leftMedia{
+                height: 20vh;
+                width: 30vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .mediaInfo .rightMedia a{
+                text-decoration: none;
+                color: white;
+            }
+@media screen and (max-width: 980px) {
+    .mediaInfo .leftMedia img{
+                width: 180px;
+            }
+            .mediaInfo .leftMedia .Insta{
+                width: 130px;
+            }
+            .mediaInfo .leftMedia .Discord{
+                width: 140px;
+            }
+            .mediaInfo .leftMedia .Mail{
+                width: 100px;
+            }
+            .mediaInfo .rightMedia{
+                height: 15vh;
+                width: 50vw;
+
+            }
+            .mediaInfo .leftMedia{
+                height: 15vh;
+                width: 50vw;
+            }
+            .Contact{
+                height: 80vh;
+            }
+        }
+            @media screen and (max-width: 500px) {
+    .mediaInfo .leftMedia img{
+                width: 140px;
+            }
+            .mediaInfo .leftMedia .Insta{
+                width: 100px;
+            }
+            .mediaInfo .leftMedia .Discord{
+                width: 110px;
+            }
+            .mediaInfo .leftMedia .Mail{
+                width: 70px;
+            }
+            .mediaInfo .rightMedia{
+                height: 10vh;
+                width: 70vw;
+
+            }
+            .mediaInfo .leftMedia{
+                height: 10vh;
+                width: 30vw;
+            }
+            .Contact{
+                height: 80vh;
+            }
+}
+        </style>
+       <section class="Contact">
+        <div class="contactHead"><h2>Contact Me</h2></div>
+        
+        <div class="mediaInfo">
+            <div class="leftMedia">
+                <a target="_blank" href="https://www.linkedin.com/in/muhammad-tayyab-802aab2b4/"><img data-aos="zoom-in" data-aos-duration="1000"  class="Linkedin"
+                                src="linkedIn.webp" alt="LinkedIn"></a>
+            </div>
+            <div class="rightMedia">
+                <a data-aos="zoom-in" data-aos-duration="1000"  href="https://www.linkedin.com/in/muhammad-tayyab-802aab2b4/" target="_blank">Username: Muhammad Tayyab</a>
+            </div>
+        </div>
+        
+        <div class="mediaInfo">
+            <div class="leftMedia">
+                <a target="_blank" href="https://www.instagram.com/insightful_tabi"><img data-aos="zoom-in" data-aos-duration="1000"  class="Insta"
+                    src="insta.png" alt="Instagram"></a>
+            </div>
+            <div class="rightMedia">
+                <a data-aos="zoom-in" data-aos-duration="1000"  href="https://www.instagram.com/insightful_tabi" target="_blank">Username: insightful_tabi</a>
+            </div>
+        </div>
+        
+        <div class="mediaInfo">
+            <div class="leftMedia">
+                <a target="_blank" href="https://discord.com/users/Tayyab#0644"><img data-aos="zoom-in" data-aos-duration="1000"  class="Discord"
+                    src="Dc.webp" alt="Discord"></a>
+            </div>
+            <div class="rightMedia">
+                <a data-aos="zoom-in" data-aos-duration="1000"  target="_blank" href="https://discord.com/users/Tayyab#0644"><p>Username: Tayyab#0644</p></a>
+            </div>
+        </div>
+        
+        <div class="mediaInfo">
+            <div class="leftMedia">
+                <img data-aos="zoom-in" data-aos-duration="1000"  class="Mail" src="mail.png" alt="Email">
+            </div>
+            <div class="rightMedia">
+                <a data-aos="zoom-in" data-aos-duration="1000"  href="mailto:tayyab7944@gmail.com">Username: tayyab7944@gmail.com</a>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+    <footer>
+        <div class="footer flex">
+            <div class="first">Tayyab's Portfolio</div>
+            <div class="second">
+                <div class="leftfooter"><span><a target="_blank"
+                            href="https://www.linkedin.com/in/muhammad-tayyab-802aab2b4/"><img class="Linkedin"
+                                src="linkedIn.webp" alt="LinkedIn"></a></span>
+                    <span><a target="_blank" href="https://www.instagram.com/insightful_tabi"><img class="Insta"
+                                src="insta.png" alt="Instagram"></a></span>
+                    <span><a target="_blank" href="https://discord.com/Tayyab#0644"><img class="Discord"
+                                src="Dc.webp" alt="Discord"></a></span>
+                    <span><a target="_blank" href="#"><img class="Twitter" src="twitter.webp" alt="Twitter"></a></span>
+                </div>
+                <div class="rights">© 2024 Tayyab's Portfolio. All Rights Reserved.</div>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".right ul");
+            let hamburger = document.querySelector(".hamburger");
+
+            menu.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        }
+    </script>

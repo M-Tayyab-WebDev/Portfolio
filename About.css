@@ -1,0 +1,47 @@
+.About-Main-Section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vh 0;
+    height: 80vh;
+}
+
+.About-Main-Section .About-Left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; /* Default width */
+    line-height: 2;
+    gap: 20px;
+    word-spacing: 3px;
+}
+
+.About-Main-Section .About-Right {
+    display: flex;
+    justify-content: center;
+}
+
+.About-Main-Section .About-Right img {
+    width: 100%;
+    border-radius: 50%;
+    background: #f17331;
+}
+
+/* Media Query */
+@media screen and (max-width: 1300px) {
+    .About-Main-Section {
+        flex-direction: column-reverse;
+        margin: 11vh 0;
+    }
+
+    .About-Main-Section .About-Left {
+        width: 80%; /* Overriding width in the media query */
+        font-size: 9px;
+        margin-top: 8vh;
+    }
+
+    .About-Main-Section .About-Right {
+        width: 30%; /* Optional: You might want to adjust the right section as well */
+    }
+}

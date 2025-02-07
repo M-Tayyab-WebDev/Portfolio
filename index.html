@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab's Portfolio</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="utility.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tayyab's Portfolio</div>
+            <div class="right">
+                <ul class="flex justify">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftsec" data-aos="fade-up" data-aos-duration="1000" >
+                Hi, My name is <span class="purple">Tayyab</span>
+                <div>and I am a passionate</div>
+                <span class="element">Web Developer </span><span class="partition"><b>|</b></span><span class="element"> Video Editor </span><span class="partition"><b>|</b></span><span class="element"> Graphic Designer</span>
+                <br>
+                <span ><a href="Projects.html"><button class="Projects">My Projects</button></a></span>
+                <span ><a href="Tabi CV.zip"><button class="CV">My CV</button></a></span> 
+            </div>
+            <div class="rightsec" data-aos="zoom-in" data-aos-duration="1000">
+                <img class="mypic" src="side.png" alt="Profile Picture">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <hr>
+            <span class="txt-gray">What I have done so far</span>
+            <div class="heading" >Work Experience:</div>
+            <section class="Skill">
+                <div class="left Aimage" data-aos="zoom-in" data-aos-duration="1000" >
+                    <img class="Video "  src="Video.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" >
+                        <h3>Video Editing and Animations</h3>
+                        <p>I edit professional videos with smooth transitions and effects using Adobe Premiere Pro and After Effects. For animations, I create 2D/3D motion graphics using  After Effects.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="Skill">
+                <div class="left">
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" >
+                        <h3>Logo Designing</h3>
+                        <p> I design unique and visually appealing logos using Adobe Illustrator and Photoshop, focusing on modern and creative brand identity.</p>
+                    </div>
+                </div>
+                <div class="right Aimage" data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="graphic "  src="front.png" alt="">
+                </div>
+            </section>
+            <section class="Skill">
+                <div class="left Aimage" data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="website "  src="website.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000" >
+                        <h3>Website Development</h3>
+                        <p>I build responsive and dynamic websites using HTML, CSS, JavaScript, React, and WordPress, with design support from Figma for UI/UX.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer >
+        <div class="footer flex" >
+            <div class="first">Tayyab's Portfolio</div>
+            <div class="second">
+                <div class="leftfooter"><span><a target="_blank" href="https://www.linkedin.com/in/muhammad-tayyab-802aab2b4/"><img class="Linkedin" src="linkedIn.webp" alt="LinkedIn"></a></span>
+                    <span><a target="_blank" href="https://www.instagram.com/insightful_tabi"><img class="Insta" src="insta.png" alt="Instagram"></a></span>
+                    <span><a target="_blank" href="https://discord.com/users/Tayyab#0644"><img class="Discord" src="Dc.webp" alt="Discord"></a></span>
+                    <span><a target="_blank" href="#"><img class="Twitter" src="twitter.webp" alt="Twitter"></a></span></div>
+            <div class="rights">© 2024 Tayyab's Portfolio. All Rights Reserved.</div>
+                    
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".right ul");
+            let hamburger = document.querySelector(".hamburger");
+
+            menu.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+
+</html>

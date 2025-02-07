@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+.purple{
+color: #f17331;
+font-weight: bold;
+}
+.txt-gray{
+    color: gray;
+}

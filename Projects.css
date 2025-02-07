@@ -1,0 +1,179 @@
+.projectsSection {
+    padding: 50px 10%;
+    background-color: #000000;
+}
+
+.sectionTitle h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sliderSection {
+    margin-bottom: 50px;
+}
+
+.sliderSection h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sliderContainer {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliderItem {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+video, .sliderItem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Buttons for controlling sliders */
+.sliderSection .prev, .sliderSection .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.FirstSection {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.slider-container {
+    width: 52vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* border: white 2px solid; */
+    border-radius: 20px;
+}
+.Cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.card {
+    flex: 0 0 auto;
+    margin: 15px;
+}
+video {
+    width: 400px;
+    border-radius: 30px;
+    border: white 2px solid;
+}
+.slider-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30%;
+}
+.left-btn {
+    left: 10px;
+}
+.right-btn {
+    right: 10px;
+}
+.MyProject{
+    height: 20vh;
+    behavior: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 200px;
+}
+.ProjectNames{
+    margin-top: 30px;
+    text-align: center;
+}
+.Second{
+    height: 40vh;
+}
+button:hover{
+    background: #f17331;
+    padding: 5px;
+    border-radius: 50%;
+}
+@media screen and (min-width: 1100px) {
+    .slider-container {
+        width: 45vw;
+    }
+    video {
+        width: 250px;
+    }
+    .slider-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-container {
+        width: 90vw;
+    }
+    video {
+        width: 250px;
+    }
+    .slider-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slider-container {
+        width: 100vw;
+    }
+    video {
+        width: 160px;
+    }
+    .slider-btn {
+        padding: 6px;
+        font-size: 14px;
+    }
+    .ProjectNames{
+    margin: 8px 15px;
+}
+}

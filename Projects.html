@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab's Portfolio</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Projects.css">
+    <script src="project.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Tayyab's Portfolio</div>
+            <div class="right">
+                <ul class="flex justify">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="MyProject">
+            <h2>My Projects</h2>
+        </div>
+        <div class="ProjectNames">
+            <h3>Videos</h3>
+        </div>
+        <section class="FirstSection">
+            <button class="slider-btn left-btn" onclick="moveSlider(-1, 'cardsContainer1')">&#10094;</button>
+            <div class="slider-container">
+                <div class="Cards" id="cardsContainer1">
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/3d reel.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/Insta ppt_1.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/3D reel2.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/Project1.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/reel 3.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/short_1.mp4" controls autoplay
+                            muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Video/video.mp4" controls autoplay muted
+                            loop></video>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn right-btn" onclick="moveSlider(1, 'cardsContainer1')">&#10095;</button>
+        </section>
+        <div class="ProjectNames">
+            <h3>Logo Animations</h3>
+        </div>
+
+        <section class="FirstSection Second">
+            <button class="slider-btn left-btn" onclick="moveSlider(-1, 'cardsContainer2')">&#10094;</button>
+            <div class="slider-container">
+                <div class="Cards" id="cardsContainer2">
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Logo Animations/Leads.mp4" controls
+                            autoplay muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Logo Animations/logo animation.mp4"
+                            controls autoplay muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Logo Animations/nn white.mp4" controls
+                            autoplay muted loop></video>
+                    </div>
+                    <div class="card text-start">
+                        <video data-aos="zoom-in" data-aos-duration="1000" src="Logo Animations/MSlogo.mp4" controls
+                            autoplay muted loop></video>
+                    </div>
+
+                </div>
+            </div>
+            <button class="slider-btn right-btn" onclick="moveSlider(1, 'cardsContainer2')">&#10095;</button>
+        </section>
+        <div class="ProjectNames">
+            <h3>Logos</h3>
+        </div>
+
+        <section class="FirstSection Second">
+            <button class="slider-btn left-btn" onclick="moveSlider(-1, 'cardsContainer3')">&#10094;</button>
+    <div class="slider-container">
+        <div class="Cards" id="cardsContainer3">
+            
+            <div class="card text-start">
+                <img data-aos="zoom-in" data-aos-duration="1000" src="Graphics/DW logo.png" alt="">
+            </div>
+            <div class="card text-start">
+                <img data-aos="zoom-in" data-aos-duration="1000" src="Graphics/BackCover.jpg" alt="">
+            </div>
+            <div class="card text-start">
+                <img data-aos="zoom-in" data-aos-duration="1000" src="Graphics/NN White BG.png" alt="">
+            </div>
+            </div>
+            </div>
+    <button class="slider-btn right-btn" onclick="moveSlider(1, 'cardsContainer3')">&#10095;</button>
+        </section>
+        <script>
+            let scrollAmount1 = 0;
+            let scrollAmount2 = 0;
+            let scrollAmount3 = 0;
+
+            const cardWidth = document.querySelector(".card").offsetWidth + 30; // Video width + margin
+
+            function moveSlider(direction, containerId) {
+                const cardsContainer = document.getElementById(containerId);
+                const sliderContainer = cardsContainer.parentElement;
+                const maxScroll = cardsContainer.scrollWidth - sliderContainer.offsetWidth;
+
+                if (containerId === 'cardsContainer1') {
+                    scrollAmount1 += direction * cardWidth;
+                    if (scrollAmount1 < 0) scrollAmount1 = 0;
+                    if (scrollAmount1 > maxScroll) scrollAmount1 = maxScroll;
+                    cardsContainer.style.transform = `translateX(-${scrollAmount1}px)`;
+                } else if (containerId === 'cardsContainer2') {
+                    scrollAmount2 += direction * cardWidth;
+                    if (scrollAmount2 < 0) scrollAmount2 = 0;
+                    if (scrollAmount2 > maxScroll) scrollAmount2 = maxScroll;
+                    cardsContainer.style.transform = `translateX(-${scrollAmount2}px)`;
+                } else if (containerId === 'cardsContainer3') {
+                    scrollAmount3 += direction * cardWidth;
+                    if (scrollAmount3 < 0) scrollAmount3 = 0;
+                    if (scrollAmount3 > maxScroll) scrollAmount3 = maxScroll;
+                    cardsContainer.style.transform = `translateX(-${scrollAmount3}px)`;
+                }
+            }
+
+        </script>
+
+    </main>
+    <footer>
+        <div class="footer flex">
+            <div class="first">Tayyab's Portfolio</div>
+            <div class="second">
+                <div class="leftfooter"><span><a target="_blank"
+                            href="https://www.linkedin.com/in/muhammad-tayyab-802aab2b4/"><img class="Linkedin"
+                                src="linkedIn.webp" alt="LinkedIn"></a></span>
+                    <span><a target="_blank" href="https://www.instagram.com/insightful_tabi"><img class="Insta"
+                                src="insta.png" alt="Instagram"></a></span>
+                    <span><a target="_blank" href="https://discord.com/users/Tayyab#0644"><img class="Discord"
+                                src="Dc.webp" alt="Discord"></a></span>
+                    <span><a target="_blank" href="#"><img class="Twitter" src="twitter.webp" alt="Twitter"></a></span>
+                </div>
+                <div class="rights">© 2024 Tayyab's Portfolio. All Rights Reserved.</div>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".right ul");
+            let hamburger = document.querySelector(".hamburger");
+
+            menu.classList.toggle("show");
+            hamburger.classList.toggle("active");
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

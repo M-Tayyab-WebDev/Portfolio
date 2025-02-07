@@ -1,0 +1,591 @@
+body {
+    background: #000000;
+    color: white;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f17331;
+    height: 60px;
+    font-weight: bold;
+
+}
+
+header {
+    width: 100%;
+
+}
+
+.left {
+    font-size: 1.2rem;
+    
+}
+
+ul li {
+    list-style: none;
+    margin: 0 23px;
+    cursor: pointer;
+    width: 110px;
+    height: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul li a:hover {
+    color: #8a8a8a;
+    font-size: 1.06rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 8vh 0;
+    align-items: center;
+    height: 70vh;
+}
+
+.leftsec {
+    width: 50%;
+    font-size: 3rem;
+    text-align: center;
+}
+button{
+    padding: 5px;
+    background: #120c42;
+    color: white;
+    border: white 2px solid;
+    border-radius: 10px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    margin: 20px 15px;
+}
+button:hover{
+    background: #1f1855;
+    height: 37px;
+    font-weight: bold;
+}
+
+.rightsec {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.rightsec img {
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 40%;
+    background: #ffffff;
+
+}
+
+.element {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.partition{
+    color: #f17331;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+}
+
+.secondSection>hr {
+    border: 0;
+    background: rgb(255, 255, 255);
+    height: 2px;
+    margin: 40px auto;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .Skill {
+    display: flex;
+    justify-content: space-around;
+    /* background: #ffe7e7; */
+    margin: 20px;
+    height: auto;
+}
+
+.secondSection .Skill .right {
+    width: 40vw;
+    /* background: #d0ff00; */
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.secondSection .Skill .left {
+    width: 40vw;
+    /* background: #ff0000; */
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection .Skill .text h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+
+}
+
+.secondSection .Skill .text p {
+    font-size: 1rem;
+    line-height: 2;
+    word-spacing: 5px;
+
+}
+
+.Video {
+    border-radius: 30px;
+    border: 2px white solid;
+
+}
+
+.graphic {
+    width: 50%;
+    border-radius: 30px;
+    border: 2px white solid;
+
+
+}
+
+.website {
+    width: 70%;
+    border-radius: 30px;
+    border: 2px white solid;
+
+}
+
+.heading {
+    color: #f17331;
+
+}
+
+.image-top {
+    width: 40px;
+    position: relative;
+    top: -35px;
+    left: -18px;
+}
+
+footer {
+    background: #1b1b1b;
+    height: 17vh;
+    display: flex;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.footer {
+    background: #1b1b1b;
+    padding: 23px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+}
+
+.footer .first {
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+}
+
+.second {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.second img {
+    width: 26px;
+    filter: brightness(0.5);
+}
+
+.second a {
+    text-decoration: none;
+    color: white;
+}
+
+.second .Linkedin {
+    width: 37px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 5vw;
+}
+
+.second .leftfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Animated Navbar */
+.right ul {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.footer .rights {
+    font-size: smaller;
+    text-align: center;
+}
+
+
+.hamburger {
+    display: none;
+
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    top: 5px;
+    z-index: 1000;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hamburger div {
+    background-color: white;
+    height: 4px;
+    width: 20px;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Rotate animation for hamburger menu */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hiden {
+    display: none;
+}
+
+@media screen and (min-width: 2450px) {
+    .leftsec {
+        width: 50%;
+        font-size: 6rem;
+    }
+    .element{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+   
+    .secondSection .Skill .text h3{
+        font-size: 2rem;
+        margin: 10px 0;
+        
+    }
+    .secondSection .Skill .text p{
+        font-size: 1.8rem;
+        line-height: 2;
+        word-spacing: 5px;
+    
+    }
+    .Video{
+        border-radius: 30px;
+        border: 2px white solid;
+        width: 70%;
+    }
+    .graphic{
+        width: 50%;
+        border-radius: 30px;
+        border: 2px white solid;
+        
+    
+    }
+    .website{
+        width: 70%;
+        border-radius: 30px;
+        border: 2px white solid;
+    }
+    button{
+       
+        width: 180px;
+        height: 50px;
+        font-weight: bolder;
+        
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    .leftsec {
+        width: 50%;
+        font-size: 4rem;
+        
+    }
+    .element{
+        font-size: 1.7rem;
+        font-weight: lighter;
+    }
+    /* .Video{
+        border-radius: 30px;
+        border: 2px white solid;
+        width: 70%;
+    } */
+    
+}@media screen and (max-width: 1800px) {
+   
+    .element{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    .partition{
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+  
+    .rightsec {
+        width: 40%;
+        text-align: center;
+        margin: 70px 0;
+    }
+    .Video{
+        border-radius: 30px;
+        border: 2px white solid;
+        width: 65%;
+    }
+   
+
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .leftsec {
+        width: 40%;
+        font-size: 2rem;
+    }
+    .element{
+        font-size: 0.7rem;
+        font-weight: lighter;
+    }
+    .firstSection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 80vh;
+        width: 40%;
+        background: #f17331;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        transition: right 0.4s ease-in-out;
+        z-index: 1000;
+        border-radius: 20px;
+        font-size: medium;
+    }
+    .right ul:hover{
+        color: #8a8a8a;
+    font-size: 1.06rem;
+    }
+    .Video{
+        border-radius: 30px;
+        border: 2px white solid;
+        width: 65%;
+    }
+
+    .right ul.show {
+        right: 0;
+    }
+
+    .right ul li {
+        margin: 25px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: center;
+        margin: 11vh 0;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap:30px;
+    }
+
+    .leftsec {
+        width: 80%;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin: 5vh 0;
+    }
+
+    .rightsec {
+        width: 50%;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: auto;
+    }
+
+    .secondSection>hr {
+        border: 0;
+        background: gray;
+        height: 2px;
+        margin: 40px 84px;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .firstSection{
+    margin: 5vh 0;
+
+    }
+    .leftsec {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+    .element{
+        font-size: 0.5rem;
+        font-weight: lighter;
+    }
+    button{
+        width: 100px;
+        margin-top: 30px;
+    }
+
+    .firstSection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .secondSection .Skill {
+        display: flex;
+        justify-content: space-around;
+        margin: 3px;
+        height: 30vh;
+        flex-direction: row;
+        width: 80vw;
+    }
+
+    .secondSection .Skill .right {
+        width: 100vw;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+    }
+
+    .secondSection .Skill .Aimage {
+        width: 60%;
+    }
+
+    .secondSection .Skill .left {
+        width: 80vw;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondSection .Skill .text h3 {
+        font-size: 0.8rem;
+        margin: 3px 0;
+    }
+
+    .secondSection .Skill .text p {
+        font-size: 9px;
+        line-height: 1.5;
+        word-spacing: 4px;
+    }
+
+    .Video {
+        width: 80%;
+        border-radius: 30px;
+        border: 2px white solid;
+    }
+
+    .graphic {
+        width: 80%;
+        border-radius: 30px;
+        border: 2px white solid;
+    }
+
+    .website {
+        width: 70%;
+        border-radius: 30px;
+        border: 2px white solid;
+    }
+
+    .second {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+}
