@@ -128,7 +128,10 @@ button:hover{
     margin: 20px;
     height: auto;
 }
-
+.secondSection  .one{
+    background-color: #0e0d0c;
+    border-radius: 20px;
+}
 .secondSection .Skill .right {
     width: 40vw;
     /* background: #d0ff00; */
